@@ -1,0 +1,83 @@
+/* PAGINATION */
+
+.pagination {
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination li {
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.pagination li:not(:nth-last-child(-n + 2)) {
+  border-right: none;
+}
+
+.pagination li a {
+  display: inline-block;
+  padding: 10px 18px;
+  font-weight: bold;
+
+  outline: none;
+}
+
+.pagination li.active {
+  background-color: rgb(231, 225, 225);
+}
+
+.previous {
+  margin-right: 10px;
+}
+
+.previous a {
+  border-right: 1px solid grey;
+}
+
+.next {
+  margin-left: 10px;
+}
+
+/* PAGINATION */
+
+@media screen and (max-width: 767px) {
+  .pagination li a {
+    padding: 5px 10px;
+  }
+
+  .previous {
+    margin-right: 5px;
+  }
+
+  .next {
+    margin-left: 5px;
+  }
+
+  .card {
+    width: 15rem !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pagination {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .pagination li {
+    margin-top: 5px;
+  }
+
+  .pagination li a {
+    padding: 5px 10px;
+  }
+
+  .previous {
+    margin-right: 5px;
+  }
+
+  .next {
+    margin-left: 5px;
+  }
+}
